@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#B8A8A8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                tools:src="@drawable/sumon_profile"
+                android:layout_weight="1"
+                ></de.hdodenhof.circleimageview.CircleImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sumon Roy"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Developer"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/educationButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:drawableLeft="@drawable/baseline_school_24"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"/>
+            <Button
+                android:id="@+id/skillButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="skills"
+                android:drawableLeft="@drawable/baseline_code_24"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/galleryButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:drawableLeft="@drawable/baseline_photo_library_24"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"/>
+            <Button
+                android:id="@+id/hobbyButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hobbies"
+                android:drawableLeft="@drawable/baseline_extension_24"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/contactButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:drawableLeft="@drawable/baseline_contact_page_24"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"/>
+
+        </LinearLayout>
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <FrameLayout
+                   android:id="@+id/frameLayoutId"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   />
+           </ScrollView>
+
+
+</LinearLayout>
